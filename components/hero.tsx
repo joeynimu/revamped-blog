@@ -17,7 +17,7 @@ const Hero = () => {
         </p>
       </div>
       <div className="order-1 col-span-1 grid justify-center md:order-2 md:justify-end">
-        <div className="relative h-[200px] w-[200px] md:h-[180px]  md:w-[180px] lg:h-[250px] lg:w-[250px] ">
+        <div className="relative h-[200px]  w-[200px] md:h-[180px] md:w-[180px] lg:h-[250px] lg:w-[250px] xl:h-[280px] xl:w-[280px] ">
           <Image
             src={Sketch}
             alt="Joe sketch"
