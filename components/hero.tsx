@@ -6,10 +6,10 @@ const Hero = () => {
   return (
     <section className="grid grid-cols-1 items-center md:grid-cols-4">
       <div className="order-2 col-span-3 pt-4 pr-4 md:pt-0">
-        <h3 className="font-sans text-3xl font-semibold">
+        <h3 className="text-center font-sans text-2xl font-semibold md:text-right md:text-3xl">
           Hi 👋, I&apos;m Joe Ng&apos;ethe,
         </h3>
-        <p className="py-3 font-sans text-lg text-[#2d3748]">
+        <p className="py-3 text-center font-sans text-lg text-[#2d3748] md:text-right">
           I am a Software Engineer from Nairobi, Kenya 🇰🇪.
           <br /> I love React, GraphQL and anything Javascript. I learn by
           sharing my knowledge with the community through blog posts, workshops,

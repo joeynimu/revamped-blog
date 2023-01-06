@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import { IBM_Plex_Sans } from "@next/font/google";
 import Head from "next/head";
 import Header from "../components/layout/header";
+import Footer from "../components/layout/footer";
 
 const ibm = IBM_Plex_Sans({
   weight: ["400", "500", "600", "700"],
@@ -21,6 +22,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <Header />
         <Component {...pageProps} />
       </main>
+      <Footer />
     </>
   );
 }
