@@ -10,3 +10,7 @@
       "Noto Color Emoji";
   }
 }
+main {
+  font-family: var(--font-IBM);
+  color: #2d3748;
+}

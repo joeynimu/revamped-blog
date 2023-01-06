@@ -1,10 +1,11 @@
 import Image from "next/image";
 import React from "react";
+import Sketch from "public/images/joe-sketch.jpg";
 
 const Hero = () => {
   return (
-    <section className="flex items-center">
-      <div className="basis-2/3 pr-4">
+    <section className="grid grid-cols-1 items-center md:grid-cols-4">
+      <div className="order-2 col-span-3 pt-4 pr-4 md:pt-0">
         <h3 className="font-sans text-3xl font-semibold">
           Hi 👋, I&apos;m Joe Ng&apos;ethe,
         </h3>
@@ -14,17 +15,18 @@ const Hero = () => {
           sharing my knowledge with the community through blog posts, workshops,
           and Open-source.
         </p>
-        <button>Get to know more about me</button>
       </div>
-      <div className="basis-1/3 text-right">
-        <Image
-          src="/images/joe-sketch.jpg"
-          alt="Joe sketch"
-          width={250}
-          height={250}
-          priority
-          className="rounded-full shadow-lg"
-        />
+      <div className="order-1 col-span-1 grid justify-center md:order-2 md:justify-end">
+        <div className="relative h-[200px] w-[200px] md:h-[180px]  md:w-[180px] lg:h-[250px] lg:w-[250px] ">
+          <Image
+            src={Sketch}
+            alt="Joe sketch"
+            fill
+            priority
+            placeholder="blur"
+            className="mx-0 inline-block self-center rounded-full"
+          />
+        </div>
       </div>
     </section>
   );
